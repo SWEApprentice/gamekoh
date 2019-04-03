@@ -8,11 +8,11 @@
 <ion-searchbar placeholder="ชื่อนักเรียน" ></ion-searchbar>
 <ion-content>
   <ion-label>อนุบาล {{ Level.class }}/{{ Level.room }}</ion-label>
-    <ion-item *ngFor ="let item of Liststudent">
+    <ion-item *ngFor ="let item of Liststudent" href="profile">
       <br>
      <ion-avatar item-left>
-       <img src="{{item.image}}">
+      <img src="{{item.image}}"> 
      </ion-avatar>
-        <ion-label> {{item.name}} {{item.lastname}} </ion-label>
+    <ion-label> {{item.name}} {{item.lastname}} </ion-label>
       </ion-item>
 </ion-content>
