@@ -5,24 +5,28 @@
 </ion-header>
 
 <ion-content>
- <ion-card>
+ <ion-card *ngFor = "let item of Listimage">
+   <ion-item >
+     <ion-slides pager>
+       <ion-slide >
+          <img src= {{item.img1}} >
+       </ion-slide>
+       <ion-slide >
+          <img src= {{item.img2}} >
+       </ion-slide>
+       <ion-slide >
+          <img src= {{item.img2}} >
+       </ion-slide>
+       
+     </ion-slides>
+   
    <ion-card-header>
      
    </ion-card-header>
    <ion-card-content>
-    <ion-item>
-      <ion-card>
-        <img src=""/>
-        <ion-card-content>
-          <ion-card-title>
-       
-          </ion-card-title>
-          <p>
-            
-          </p>
-        </ion-card-content>
-      </ion-card>
-    </ion-item>
+     {{item.name}}
+     {{item.data}}
    </ion-card-content>
+  </ion-item>
  </ion-card>
 </ion-content>
