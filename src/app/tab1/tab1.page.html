@@ -7,5 +7,10 @@
 </ion-header>
 <ion-searchbar placeholder="ชื่อนักเรียน"></ion-searchbar>
 <ion-content>
-   
+    <ion-item *ngFor = "let item of Liststudent">
+        <ion-avatar slot="start">
+          <img src= {{item.image}} >
+        </ion-avatar>
+        <ion-label> {{item.name}} {{item.lastname}} </ion-label>
+      </ion-item>
 </ion-content>
